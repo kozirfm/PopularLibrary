@@ -11,14 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".lesson5.App">
+        android:name=".lesson6.dagger.app.App">
         <activity android:name=".lesson5.RoomActivity">
+
+        </activity>
+        <activity android:name=".lesson6.di.DiActivity">
+
+        </activity>
+        <activity android:name=".lesson6.dagger.DaggerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
