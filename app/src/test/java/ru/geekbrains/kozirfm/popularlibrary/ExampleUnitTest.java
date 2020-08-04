@@ -2,16 +2,30 @@ package ru.geekbrains.kozirfm.popularlibrary;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import ru.geekbrains.kozirfm.popularlibrary.unit.Sum;
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
- */
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+
 public class ExampleUnitTest {
+
+    Sum sum = new Sum();
+
     @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+    public void sum_isCorrect() {
+        int a = 1;
+        int b = 2;
+        int result = sum.sum(a, b);
+
+        assertEquals(result, 3);
+    }
+
+    @Test
+    public void sum_isIncorrect() {
+        int a = 1;
+        int b = 2;
+        int result = sum.sum(a, b);
+
+        assertNotEquals(result, 4);
     }
 }
